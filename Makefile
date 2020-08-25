@@ -1,7 +1,7 @@
 # Go parameters
-BINARY_NAME=license-check
+BINARY_NAME=rabbit-topic
 BINARY_UNIX=$(BINARY_NAME)_unix
-REPO=docker.pkg.github.com/dathan/go-project-template/go-project-template
+REPO=docker.pkg.github.com/dathan/rabbit-topic/rabbit-topic
 
 .PHONY: all
 all: lint test build
