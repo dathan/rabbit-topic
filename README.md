@@ -1,6 +1,6 @@
 ## Purpose
 
-Build a template repository to get to coding as quickly as possible, by starting from a common template which follows the guidelines [`here`](https://github.com/golang-standards/project-layout)
+Illustrate topic based fanout 
 
 ## Features
 * Makefile to build consistently in a local environment and remote environment
@@ -10,9 +10,9 @@ Build a template repository to get to coding as quickly as possible, by starting
 * Generic docker push
 
 ## TODO
-* Brew generic install [DONE]
-* GITHUB Actions build and push to dockerhub [DONE]
-* Production Builds with git tag
+* add retry logic 
+* add signal handling
+
 
 ## Installing via brew
 * `brew install --verbose --build-from-source brew/Formula/rabbit-topic.rb`
