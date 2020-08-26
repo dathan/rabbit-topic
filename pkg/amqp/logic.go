@@ -86,7 +86,7 @@ func (am *internalAMQP) Publish(key, message string) error {
 	return nil
 }
 
-//Setup the bindings
+//Setup the queue bindings but there is small leak that looses context of the channel when the queue changes. Should create a channel per distinct queuename
 func (am *internalAMQP) SetupQueue(name, key string) error {
 	if err := am.init(); err != nil {
 		return err
